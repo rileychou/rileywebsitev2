@@ -31,3 +31,19 @@
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
+
+@media (max-width: 850px) {
+    .card {
+        width: 100%;
+    }
+
+    .imgContainer {
+        height: 12rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .imgContainer {
+        height: 10rem;
+    }
+}

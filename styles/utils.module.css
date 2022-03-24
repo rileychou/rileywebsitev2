@@ -81,3 +81,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (max-width: 500px) {
+    .locAndRes{
+      flex-direction: column;
+    }
+    .locAndRes h2{
+      font-size: 1.3em;
+    }
+  }

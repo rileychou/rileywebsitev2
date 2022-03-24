@@ -16,6 +16,7 @@ export default function Layout({ children, home }) {
           name="description"
           content="Riley Chou's personal website."
         />
+        <meta name="theme-color" content="#35cce7"></meta>
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(

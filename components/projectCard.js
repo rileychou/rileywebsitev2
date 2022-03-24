@@ -16,7 +16,7 @@ const ProjectCard = ({ proj }) => {
             <p>{proj.desc}</p>
             <div className={pcStyles.techParent}>
                 {proj.tech.map((t) => (
-                    <small className={pcStyles.tech}>{t}</small>
+                    <small key={t} className={pcStyles.tech}>{t}</small>
                 ))}
             </div>
         </div>

@@ -3,20 +3,24 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
+import Head from 'next/head'
 
 export async function getStaticProps() {
-    const allPostsData = getSortedPostsData()
-    return {
-      props: {
-        allPostsData
-      }
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
     }
   }
+}
 
 export default function Blog({ allPostsData }) {
-    return(
+  return (
     <Layout>
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <Head>
+        <title>{siteTitle} | Blog</title>
+      </Head>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
@@ -33,6 +37,6 @@ export default function Blog({ allPostsData }) {
         </ul>
       </section>
     </Layout>
-    
-    );
+
+  );
 }

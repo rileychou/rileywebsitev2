@@ -1,6 +1,7 @@
 import ProjectCard from "../components/projectCard"
 import utilStyles from '../styles/utils.module.css'
-import Layout from "../components/layout"
+import Layout, { siteTitle } from "../components/layout"
+import Head from 'next/head'
 
 export default function projects() {
     const projectInfo = [
@@ -13,11 +14,14 @@ export default function projects() {
 
     return (
         <Layout>
+            <Head>
+                <title>{siteTitle} | Projects</title>
+            </Head>
             <h2 className={utilStyles.headingXl}>Personal Projects</h2>
             <p>I'm proud of those :)</p>
             <div className={utilStyles.projCardsContainer}>
                 {projectInfo.map((project) => (
-                    <ProjectCard proj={project} />
+                    <ProjectCard key={project.name} proj={project} />
                 ))}
             </div>
 

@@ -1,9 +1,13 @@
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
+import Head from 'next/head'
 
 export default function cv() {
-    return(
+    return (
         <Layout>
+            <Head>
+                <title>{siteTitle} | Experience</title>
+            </Head>
             <div className={utilStyles.locAndRes}>
                 <h2>📍 Santa Barbara, CA</h2>
                 <a className={utilStyles.resumebtn} href='/RileyChouresume.pdf'>Resume</a>

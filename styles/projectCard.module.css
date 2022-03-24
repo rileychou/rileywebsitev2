@@ -1,0 +1,33 @@
+.card {
+    background-color: #40404080;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 19rem;
+}
+
+.techParent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech {
+    background-color: #9f82d6;
+    margin: 0.3rem;
+    padding: 0.3rem 0.4rem;
+    border-radius: 3px;
+}
+
+.imgContainer {
+    position: relative;
+    height: 10rem;
+}
+
+.projImage {
+    border-radius: 6px;
+}
+
+.projHeading {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}

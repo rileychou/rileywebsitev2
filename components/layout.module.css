@@ -1,0 +1,58 @@
+.container {
+  position: relative;
+  max-width: 42rem;
+  padding: 3rem 1rem;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.footer {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  margin: 1.5em 0;
+  padding-top: 0.25rem;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a{
+  margin: 0 0 0 1rem;
+}
+
+.navbar h1 a{
+  margin: 0;
+}
+
+.socialsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialsList {
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 850px) {
+  .container {
+    padding: 3rem 2rem;
+  }
+  .header {
+    align-items: center;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+}

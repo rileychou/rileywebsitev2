@@ -10,7 +10,7 @@ export default function cv() {
             </Head>
             <div className={utilStyles.locAndRes}>
                 <h2>📍 Santa Barbara, CA</h2>
-                <a className={utilStyles.resumebtn} href='/RileyChouresume.pdf'>Resume</a>
+                <a className={utilStyles.resumebtn} href='/Riley_Resume.pdf'>Resume</a>
             </div>
             <h3 className={utilStyles.headingMd}>Experience</h3>
             <h4 className={utilStyles.headingSm}>Citro Tech</h4>

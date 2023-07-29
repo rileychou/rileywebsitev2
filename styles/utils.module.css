@@ -21,13 +21,18 @@
   }
   
   .headingMd {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.3;
   }
 
   .headingSm {
     font-size: 1.0rem;
     line-height: 1.0;
+  }
+
+  .headingXs {
+    font-size: 0.8rem;
+    line-height: 0.7;
   }
   
   .borderCircle {
@@ -77,6 +82,12 @@
   }
 
   .projCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .skillsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

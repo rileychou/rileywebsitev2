@@ -21,15 +21,18 @@ export default function Home({ allPostsData }) {
       </Head>
       <section>
         <h3>📍 Santa Barbara, CA</h3>
-        <p>Welcome to my website! I'm an inquisitive and diligent Computer Science undergraduate at UCSB.</p>
         <p>
-          Since I started programming, 
-          I've been enhancing my skills by building things (mostly frontend) when I feel like it.
+          Hello, I'm Riley, an inquisitive and diligent Computer Science undergraduate at the University of California, Santa Barbara.
+          My passion lies in full-stack web development with a specialization in front-end.
         </p>
         <p>
-          Besides coding, my three personality traits are: boulder bro, boba connoisseur, and full-time dark mode enthusiast.
+          This summer, I am a web development intern at We Vote, working with a small Agile team of engineers to build a digital voter guide. 
+          I implement fast, clean, and modular React.js code to improve user experience.
         </p>
-
+        <p>
+          When I'm not programming, you can find me climbing or lifting at the gym, jamming on the guitar, or hiking with friends.
+        </p>
+        <p>I am actively seeking internship/part-time opportunities in software engineering or related fields. If you have an opportunity, I'd love to connect.</p>
       </section>
 
     </Layout>

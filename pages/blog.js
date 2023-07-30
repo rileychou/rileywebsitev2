@@ -20,13 +20,13 @@ export default function Blog({ allPostsData }) {
       <Head>
         <title>{siteTitle} | Blog</title>
       </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <h3>Riley's random reflections and ruminations.</h3>
-        <ul className={utilStyles.list}>
+      <section className={`${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingXl}>My Blog</h2>
+        <p>Not much going on here, just a collection of random reflections and ruminations.</p>
+        <ul className={`${utilStyles.list} ${utilStyles.headingMd} `}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
+              <Link href={`/posts/${id}`} legacyBehavior>
                 {title}
               </Link>
               <br />
@@ -38,6 +38,5 @@ export default function Blog({ allPostsData }) {
         </ul>
       </section>
     </Layout>
-
   );
 }

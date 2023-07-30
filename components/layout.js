@@ -43,9 +43,9 @@ export default function Layout({ children, home }) {
                 <div className={styles.navbar}>
                   <h1 className={utilStyles.heading2Xl}>{name}</h1>
                   <div>
-                    <Link href="/blog"><a className={utilStyles.headingMd}>Blog</a></Link>
-                    <Link href="/cv"><a className={utilStyles.headingMd}>Experience</a></Link>
-                    <Link href="/projects"><a className={utilStyles.headingMd}>Projects</a></Link>
+                    <Link href="/blog" className={utilStyles.headingMd}>Blog</Link>
+                    <Link href="/cv" className={utilStyles.headingMd}>Experience</Link>
+                    <Link href="/projects" className={utilStyles.headingMd}>Projects</Link>
                   </div>
                 </div>
               </>
@@ -53,12 +53,12 @@ export default function Layout({ children, home }) {
               <>
                 <div className={styles.navbar}>
                   <h1 className={utilStyles.heading2Xl}>
-                    <Link href="/"><a className={utilStyles.colorInherit}>{name}</a></Link>
+                    <Link href="/" className={utilStyles.colorInherit}>{name}</Link>
                   </h1>
                   <div>
-                    <Link href="/blog"><a className={utilStyles.headingMd}>Blog</a></Link>
-                    <Link href="/cv"><a className={utilStyles.headingMd}>Experience</a></Link>
-                    <Link href="/projects"><a className={utilStyles.headingMd}>Projects</a></Link>
+                    <Link href="/blog" className={utilStyles.headingMd}>Blog</Link>
+                    <Link href="/cv" className={utilStyles.headingMd}>Experience</Link>
+                    <Link href="/projects" className={utilStyles.headingMd}>Projects</Link>
                   </div>
                 </div>
               </>
@@ -77,7 +77,7 @@ export default function Layout({ children, home }) {
         )*/}
           <footer className={styles.footer}>
             <ul className={`${utilStyles.list} ${styles.socialsContainer}`}>
-              <li className={styles.socialsList}><a href="https://github.com/rileychou">Github</a></li>
+              <li className={styles.socialsList}><a href="https://github.com/rileychou" target="_blank">Github</a></li>
               <li className={styles.socialsList}><a href="https://www.linkedin.com/in/rileychou/" target="_blank">LinkedIn</a></li>
               <li className={styles.socialsList}><a href="mailto:rileychou@ucsb.edu" target="_blank">Mail</a></li>
             </ul>
@@ -87,5 +87,5 @@ export default function Layout({ children, home }) {
 
       </div>
     </div>
-  )
+  );
 }

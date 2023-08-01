@@ -4,6 +4,8 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { useEffect } from 'react'
+import { SocialIcon } from 'react-social-icons'
+import useSWR from 'swr'
 
 const name = 'Riley Chou'
 export const siteTitle = 'Riley Chou'
@@ -12,6 +14,8 @@ export const siteTitle = 'Riley Chou'
 
 
 export default function Layout({ children, home }) {
+  const fetcher = (url) => fetch(url).then((r) => r.json());
+  const { data } = useSWR('/api/spotify', fetcher);
   return (
     <div className={home ? styles.bgHome : null}>
       <div className={styles.container}>
@@ -77,14 +81,14 @@ export default function Layout({ children, home }) {
         )*/}
           <footer className={styles.footer}>
             <ul className={`${utilStyles.list} ${styles.socialsContainer}`}>
-              <li className={styles.socialsList}><a href="https://github.com/rileychou" target="_blank">Github</a></li>
-              <li className={styles.socialsList}><a href="https://www.linkedin.com/in/rileychou/" target="_blank">LinkedIn</a></li>
-              <li className={styles.socialsList}><a href="mailto:rileychou@ucsb.edu" target="_blank">Mail</a></li>
+              <li className={styles.socialsList}><SocialIcon url="https://github.com/rileychou" bgColor="#00000000" fgColor='#fff' style={{ height: 60, width: 60 }} /></li>
+              <li className={styles.socialsList}><SocialIcon url="https://linkedin.com/in/rileychou" bgColor="#00000000" fgColor='#fff' style={{ height: 60, width: 60 }} /></li>
+              <li className={styles.socialsList}><SocialIcon url="mailto:rileychou@ucsb.edu" bgColor="#00000000" fgColor='#fff' style={{ height: 60, width: 60 }} /></li>
             </ul>
+            <small className={styles.smallBlock}><SocialIcon network="spotify" bgColor="#00000000" fgColor='#fff' style={{ height: 36, width: 36 }}/>{data?.isPlaying ? 'Now listening to' : 'Last listened to'} {data?.title ? data.title : 'null'} by {data?.artists ? data.artists[0].name : 'null'}.</small>
             <small>© Riley Chou 2023. Built with <a href='https://nextjs.org/learn/basics/create-nextjs-app' target="_blank">Next.js.</a></small>
           </footer>
-        </div>
-
+        </div> 
       </div>
     </div>
   );

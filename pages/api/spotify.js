@@ -53,28 +53,16 @@ export default async (_, res) => {
     return res.status(200).json({ isPlaying: false });
   }
 
-  const album = {
-    name: track.item.album.name,
-    href: track.item.album.external_urls.spotify,
-    image: {
-      height: track.item.album.images[0].height,
-      href: track.item.album.images[0].url,
-      width: track.item.album.images[0].width,
-    },
-  };
   const artists = track.item.artists.map((artist) => ({
     name: artist.name,
     href: artist.external_urls.spotify,
     id: artist.id,
   }));
-  const href = track.item.external_urls.spotify;
   const isPlaying = track.is_playing;
   const title = track.item.name;
 
   return res.status(200).json({
-    album,
     artists,
-    href,
     isPlaying,
     title,
   });

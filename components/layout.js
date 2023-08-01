@@ -79,11 +79,11 @@ export default function Layout({ children, home }) {
         )*/}
           <footer className={styles.footer}>
             <ul className={`${utilStyles.list} ${styles.socialsContainer}`}>
-              <li className={styles.socialsList}><SocialIcon url="https://github.com/rileychou" bgColor="#00000000" fgColor='#fff' style={{ height: 60, width: 60 }} /></li>
-              <li className={styles.socialsList}><SocialIcon url="https://linkedin.com/in/rileychou" bgColor="#00000000" fgColor='#fff' style={{ height: 60, width: 60 }} /></li>
-              <li className={styles.socialsList}><SocialIcon url="mailto:rileychou@ucsb.edu" bgColor="#00000000" fgColor='#fff' style={{ height: 60, width: 60 }} /></li>
+              <li className={styles.socialsList}><SocialIcon url="https://github.com/rileychou" target="_blank" bgColor="#00000000" fgColor='#fff' style={{ height: 60, width: 60 }} /></li>
+              <li className={styles.socialsList}><SocialIcon url="https://linkedin.com/in/rileychou" target="_blank" bgColor="#00000000" fgColor='#fff' style={{ height: 60, width: 60 }} /></li>
+              <li className={styles.socialsList}><SocialIcon url="mailto:rileychou@ucsb.edu" target="_blank" bgColor="#00000000" fgColor='#fff' style={{ height: 60, width: 60 }} /></li>
             </ul>
-            <small className={styles.smallBlock}><SocialIcon network="spotify" bgColor="#00000000" fgColor='#fff' style={{ height: 36, width: 36 }}/>{data?.isPlaying ? 'Now listening to' : 'Last listened to'} {data?.title ? data.title : 'null'} by {data?.artists ? data.artists[0].name : 'null'}.</small>
+            <small className={styles.smallBlock}><SocialIcon network="spotify" bgColor="#00000000" fgColor='#fff' style={{ height: 36, width: 36 }}/>{data?.isPlaying ? 'Now listening to' : 'Last listened to'} {data?.title ? data.title : 'song not found'} by {data?.artists ? data.artists[0].name : 'artist not found'}.</small>
             <small>© Riley Chou 2023. Built with <a href='https://nextjs.org/learn/basics/create-nextjs-app' target="_blank">Next.js.</a></small>
           </footer>
         </div> 

@@ -1,5 +1,5 @@
 import pcStyles from "../styles/projectCard.module.css"
-import Image from "next/image"
+import Image from "next/legacy/image"
 
 const ProjectCard = ({ proj }) => {
     return (

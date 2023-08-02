@@ -21,18 +21,16 @@ export default function Layout({ children, home }) {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Riley Chou is a computer science student at UCSB."
+            content="Riley Chou is a computer science student at UCSB who loves full-stack web development and the outdoors. Check out his experience and projects here."
           />
-          <meta name="theme-color" content="#35cce7"></meta>
+          <meta name="theme-color" content="#7fdaec"></meta>
           <meta name="author" content="Riley Chou"></meta>
           <meta
             property="og:image"
-            content={`https://og-image.vercel.app/${encodeURI(
-              siteTitle
-            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+            content={`/images/ogimage.png`}
           />
           <meta property="og:title" content={siteTitle} />
-          <meta property="og:description" content="Riley Chou's personal website." />
+          <meta property="og:description" content="Riley Chou is a computer science student at UCSB. Check out his website." />
           <meta property="twitter:card" content="summary_large_image" />
           <meta name="viewport" content="width=device-width,initial-scale=1" />
 
@@ -83,7 +81,7 @@ export default function Layout({ children, home }) {
               <li className={styles.socialsList}><SocialIcon url="https://linkedin.com/in/rileychou" target="_blank" bgColor="#00000000" fgColor='#fff' style={{ height: 60, width: 60 }} /></li>
               <li className={styles.socialsList}><SocialIcon url="mailto:rileychou@ucsb.edu" target="_blank" bgColor="#00000000" fgColor='#fff' style={{ height: 60, width: 60 }} /></li>
             </ul>
-            <small className={styles.smallBlock}><SocialIcon network="spotify" bgColor="#00000000" fgColor='#fff' style={{ height: 36, width: 36 }}/>{data?.isPlaying ? 'Now listening to' : 'Last listened to'} {data?.title ? data.title : 'song not found'} by {data?.artists ? data.artists[0].name : 'artist not found'}.</small>
+            <small className={styles.smallBlock}><SocialIcon network="spotify" bgColor="#00000000" fgColor='#fff' style={{ height: 36, width: 36 }}/>{data?.isPlaying ? `Now playing: ${data.title} by ${data.artists[0].name}.` : 'Not listening to Spotify right now.'}</small>
             <small>© Riley Chou 2023. Built with <a href='https://nextjs.org/learn/basics/create-nextjs-app' target="_blank">Next.js.</a></small>
           </footer>
         </div> 

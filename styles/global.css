@@ -9,7 +9,6 @@ body {
   background-color: #111111;
   color: white;
   min-height: 100%;
-  overflow-x: auto;
 }
 
 main {

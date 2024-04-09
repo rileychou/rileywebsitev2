@@ -82,7 +82,7 @@ export default function Layout({ children, home }) {
               <li className={styles.socialsList}><SocialIcon url="mailto:rileychou@ucsb.edu" target="_blank" bgColor="#00000000" fgColor='#fff' style={{ height: 60, width: 60 }} /></li>
             </ul>
             <small className={styles.smallBlock}><SocialIcon network="spotify" bgColor="#00000000" fgColor='#fff' style={{ height: 36, width: 36 }}/>{data?.isPlaying ? `Now playing: ${data.title} by ${data.artists[0].name}.` : 'Not listening to Spotify right now.'}</small>
-            <small>© Riley Chou 2023. Built with <a href='https://nextjs.org/learn/basics/create-nextjs-app' target="_blank">Next.js.</a></small>
+            <small>© Riley Chou 2024. Built with <a href='https://nextjs.org/learn/basics/create-nextjs-app' target="_blank">Next.js.</a></small>
           </footer>
         </div> 
       </div>

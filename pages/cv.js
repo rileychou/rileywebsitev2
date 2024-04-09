@@ -14,14 +14,14 @@ export default function cv() {
             </div>
             <h3 className={utilStyles.headingMd}>Experience</h3>
             <h4 className={utilStyles.headingSm}>Web Development Engineering Intern</h4>
-            <h5 className={utilStyles.headingXs}>We Vote | June 2023 - Present </h5>
+            <h5 className={utilStyles.headingXs}>We Vote | June 2023 - Sept 2023 </h5>
             <ul>
                 <li>Implement functions and performance improvements with React.js and JavaScript for digital voter guide to enhance user experience</li>
                 <li>Develop software on an Agile/Scrum development team, tracking issues with Jira and perform version control with Git/Github.</li>
                 <li>Deliver progress updates at weekly standups and adapt to changing specifications of features.</li>
             </ul>
             <h4 className={utilStyles.headingSm}>IT Engineering Intern</h4>
-            <h5 className={utilStyles.headingXs}>Lanner Electronics | June 2023 - Present </h5>
+            <h5 className={utilStyles.headingXs}>Lanner Electronics | June 2023 - Sept 2023 </h5>
             <ul>
                 <li>Create a web application with Model View Control architecture using Django to process work orders for Lanner Electronics.</li>
                 <li>Process data from SQLite database that is populated by the Django ModelForm class and display it on the frontend.</li>

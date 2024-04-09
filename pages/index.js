@@ -23,11 +23,11 @@ export default function Home({ allPostsData }) {
         <h3>📍 Santa Barbara, CA</h3>
         <p>
           Hello, I'm Riley, an inquisitive and diligent Computer Science undergraduate at the University of California, Santa Barbara.
-          My passion lies in full-stack web development with a specialization in front-end.
+          I love building things that make an impact.
         </p>
         <p>
-          This summer, I am a web development intern at We Vote, working with a small Agile team of engineers to build a digital voter guide. 
-          I implement fast, clean, and modular React.js code to improve user experience.
+          Last summer, I was a web development intern at We Vote, working with a small Agile team of engineers to build a digital voter guide. 
+          I implemented fast, clean, and modular React.js code to improve user experience.
         </p>
         <p>
           When I'm not programming, you can find me climbing or lifting at the gym, jamming on the guitar, or hiking with friends.
